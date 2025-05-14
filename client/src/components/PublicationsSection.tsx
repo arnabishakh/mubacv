@@ -97,7 +97,7 @@ const PublicationsSection = () => {
             <ul className="list-disc pl-6 space-y-2 text-justify text-gray-700 dark:text-gray-300">
               {googleScholarPublications.map((pub) => (
                 <li key={pub.id}>
-                  "<strong>{pub.authors}</strong>",{pub.title},  {pub.journal}, {pub.year}.
+                  "<strong>{pub.title}</strong>",{pub.authors},  {pub.journal}, {pub.year}.
                   {pub.doi && (
                     <> DOI: <a href={pub.doi} className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">{pub.doi}</a></>
                   )}
